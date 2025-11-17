@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: white;
+}
+
+table, th, td {
+    border: 1px solid #999;
+}
+
+th, td{
+    padding: 8px;
+    text-align: left;
+}
+
+button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input {
+    padding: 6px;
+    margin: 5px;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Calendar Events Manager</h1>
+
+    <button onclick="showUpcomingEvents()">Show Upcoming 7-Day Events</button>
+
+    <h2>All Events</h2>
+    <table id="eventsTable">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Location</th>
+                <th>Attendees</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        
+    </table>
+
+    <h2>Add Attendee</h2>
+    <input type="text" id="eventTitleInput" placeholder="Event title">
+    <input type="text" id="attendeeNameInput" placeholder="Attendee name">
+    <button onclick="addAttendee()">Add Attendee</button>
+
+    <h2>Tools</h2>
+    <button onclick="showFirstEventProperties()">Show First Event Properties</button>
+    <button onclick="logAllEvents()">Log Events to Console</button>
+    <button onclick="showMostAttendees()">Show Event With Most Attendees</button>
+
+    <h3 id="mostAttendeesDisplay" style="margin-top:20px; color:#333;"></h3>
+
+    <script src="script.js"></script>
+</body>
+</html>
