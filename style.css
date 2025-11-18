@@ -1,0 +1,36 @@
+body {
+    font-family: Candara;
+    margin: 20px;
+    background: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: white;
+}
+
+table, th, td {
+    border: 1px solid #999;
+}
+
+th, td{
+    padding: 8px;
+    text-align: left;
+}
+
+button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input {
+    padding: 6px;
+    margin: 5px;
+}
